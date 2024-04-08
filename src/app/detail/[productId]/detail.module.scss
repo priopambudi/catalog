@@ -3,6 +3,11 @@
   border: 1px solid var(--border-gray);
   padding: 18px;
   border-radius: 26px;
+  @media (max-width: 640px) {
+    & {
+      width: 100%;
+    }
+  }
 
   .img_wrap {
     padding: 18px;
@@ -19,4 +24,57 @@
 }
 .detail_description {
   width: 48%;
+  @media (max-width: 640px) {
+    & {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    @media (max-width: 640px) {
+      font-size: 24px;
+    }
+  }
+  .box_reviews {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    p,
+    span {
+      font-size: 14px;
+    }
+  }
+  .price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .desc {
+    font-size: 16px;
+    line-height: 1.6em;
+    @media (max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+
+  .box_btn {
+    margin-top: 20px;
+    button {
+      width: 49%;
+    }
+    @media (max-width: 640px) {
+      & {
+        position: sticky;
+        bottom: 0;
+        background: var(--bg-main);
+        padding: 20px 0;
+        button {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }

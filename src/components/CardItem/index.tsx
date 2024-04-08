@@ -45,7 +45,7 @@ const CardItem = (props: { data: dataProps }) => {
           </div>
           <p className={styles.price}>${price}</p>
         </div>
-        <Button />
+        <Button>Beli Sekarang</Button>
       </div>
     </Link>
   );
