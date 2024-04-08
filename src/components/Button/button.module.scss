@@ -1,0 +1,13 @@
+.green_btn {
+  width: 100%;
+  background: var(--green);
+  color: white;
+  padding: 12px 0;
+  margin-top: 14px;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}

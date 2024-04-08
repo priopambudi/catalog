@@ -1,0 +1,75 @@
+@use "@/styles/index.module.scss" as v;
+
+.card_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-gray);
+  border-radius: 20px;
+  padding: 20px;
+  &:hover {
+    img {
+      transform: scale(1.2);
+      transition: all 250ms ease-in-out;
+    }
+  }
+
+  .img_wrap {
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    img {
+      transition: transform 250ms ease-in-out;
+      scale: 1;
+      color: transparent;
+      width: auto;
+      height: auto;
+      max-height: 300px;
+    }
+
+    .category {
+      padding: 6px 12px;
+      background: var(--bg-main);
+      color: white;
+      border-radius: 100px;
+      font-size: 10px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: max-content;
+    }
+  }
+
+  .description_box {
+    width: 100%;
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .rating {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      span {
+        margin: 0 6px;
+      }
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.product_view {
+  width: 48%;
+  border: 1px solid var(--border-gray);
+  padding: 18px;
+  border-radius: 26px;
+
+  .img_wrap {
+    padding: 18px;
+    background: white;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    min-height: 400px;
+
+    img {
+      height: auto;
+    }
+  }
+}
+.detail_description {
+  width: 48%;
+}
